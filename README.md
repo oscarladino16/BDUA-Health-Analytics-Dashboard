@@ -4,30 +4,62 @@
 **Curso:** Métodos Cuantitativos y Cualitativos para los Negocios (107071)
 **Fase 4:** Diseño y construcción de dashboard de inteligencia de negocios
 
-## Descripción del Proyecto
-Este repositorio contiene el flujo de trabajo analítico desarrollado para fundamentar la toma de decisiones estratégicas en el sector salud. Se integra minería de texto (NLP), aprendizaje automático (Machine Learning) y estadística para analizar el estado del arte y predecir el comportamiento de la investigación sobre modelos predictivos en poblaciones vulnerables.
+### Nivel 1: Perspectiva de Aprendizaje y Crecimiento (La Base Analítica)
+* **Estrategia:** Comprender, mediante la revisión científica global, el impacto de las variables demográficas en los sistemas de aseguramiento y validar el uso de algoritmos predictivos para la gestión de salud pública.
+* **KPI 1 (Sentimiento de Innovación en Salud Pública):** Índice de favorabilidad obtenido mediante NLP en los resúmenes científicos (*abstracts*) respecto a la adopción de análisis de datos. 
+    * *Resultado del Proyecto:* **70.77% de sentimiento Positivo/Innovador**, demostrando un consenso científico absoluto sobre la viabilidad de estas tecnologías.
+* **KPI 2 (Focos de Atención Demográfica):** Identificación de los grupos demográficos más estudiados globalmente, extraídos a través del mapeo de redes de co-ocurrencia con Bibliometrix en R. Las variables clave validadas son: *Female, Male, Adult, Middle Aged, Aged*.
 
-## ⚙️ Análisis Bibliométrico (RStudio - Biblioshiny)
-A continuación, se presentan los hallazgos clave de la literatura científica extraída de Scopus para la toma de decisiones:
+### Nivel 2: Perspectiva de Procesos Internos (La Operación del Modelo)
+* **Estrategia:** Desplegar un modelo de Machine Learning de series de tiempo sobre la BDUA para automatizar el pronóstico de transiciones en la variable *Estado del afiliado* (ej. de Activo a Retirado o Suspendido).
+* **KPI 3 (Precisión del Forecast Demográfico):** Tasa de asertividad (minimización del error mediante métricas como el MAPE) del modelo predictivo al pronosticar el volumen de afiliados a corto y mediano plazo.
+* **KPI 4 (Eficiencia en Depuración de Datos):** Volumen de registros atípicos o inconsistentes (ej. afiliados marcados como fallecidos pero aún activos) identificados proactivamente por el algoritmo antes de los ciclos de auditoría tradicionales.
 
-### 1. Tendencia Anual de Producción Científica
-*(Demuestra el crecimiento exponencial del interés en esta temática)*
-![Tendencia Anual](AnnualSciProd.png)
+### Nivel 3: Perspectiva del Cliente (El Afiliado al Régimen Subsidiado)
+* **Estrategia:** Traducir la precisión de los datos en estabilidad real para el usuario. Utilizar las predicciones del modelo para evitar que los afiliados en condiciones críticas pierdan su cobertura por fricciones administrativas.
+* **KPI 5 (Estabilidad de Cobertura):** Tasa de precisión en la predicción de usuarios que caerán del estado "Activo" a estados inactivos ("Retirado", "Suspendido"), permitiendo acciones preventivas de retención.
+* **KPI 6 (Garantía de Afiliación Vulnerable):** Diferencia entre el volumen pronosticado (output del modelo de ML) y el volumen real de personas aseguradas bajo categorías prioritarias en la columna *Condición del beneficiario* (ej. "MADRES COMUNITARIAS", "POBLACIÓN INFANTIL A CARGO DEL ICBF").
 
-### 2. Nube de Palabras Clave (Author's Keywords)
-*(Enfoque de los investigadores en el nicho de negocio)*
-![Nube de Palabras](WordCloud.png)
+### Nivel 4: Perspectiva Financiera (Sostenibilidad y Capitación)
+* **Estrategia:** Dado que los ingresos de las EPS en Colombia dependen de la Unidad de Pago por Capitación (UPC) —la cual varía según la edad y el género—, se usa el modelo predictivo de la BDUA para proyectar y proteger los ingresos operacionales futuros.
+* **KPI 7 (Precisión en Proyección de Ingresos UPC):** Desviación porcentual entre los afiliados "Activos" proyectados por el modelo de ML (agrupados por Grupo etario y Género) y los afiliados "Activos" reales que efectivamente generarán un pago de capitación para la entidad.
+* **KPI 8 (Mitigación de Pagos Indebidos):** Volumen de afiliados predichos correctamente por el modelo en estado "Fallecido" o "Retirado", lo que permite a la entidad depurar la base de datos a tiempo y evitar sanciones o devoluciones financieras al sistema general de seguridad social.
 
-### 3. Mapa Temático Estratégico
-*(Cuadrantes de desarrollo de la problemática)*
-![Mapa Tematico](ThematicMap.png)
+---
 
-## 🚀 Estrategia de Negocios y Resultados (Python)
-El análisis predictivo en Python permitió evaluar el sentimiento de la literatura frente a la implementación de estas tecnologías. En respuesta a los riesgos éticos hallados, se proponen estrategias centradas en la **explicabilidad (XAI) y equidad (Fairness)** en la adopción de algoritmos para la gestión en salud pública. 
+## 3. 🛠️ Arquitectura del Flujo Analítico y Estructura del Código
 
-El detalle de estas estrategias, los KPIs propuestos y las predicciones estadísticas (PDF/ML) se encuentran consolidados en el **Dashboard final**.
+El proyecto está diseñado para ejecutarse de forma políglota dentro de un único Jupyter Notebook (`Dashboard_Fase4.ipynb`), orquestando entornos de **Python 3.12** y **R** de manera coordinada.
 
-## 📂 Archivos del Repositorio
-* `BDAU_Analytics.ipynb`: Cuaderno de Jupyter con el código fuente en Python.
-* `scopus.csv`: Dataset original con la literatura científica.
-* `Dashboard_Fase4_Inteligencia_Negocios.pdf`: Panel gerencial interpretado y predicciones de ML.
+### Estructura de Componentes en el Notebook:
+1.  **Ingesta Automatizada de Datos (API SODA - Colombia):** Conexión directa al endpoint JSON (`https://www.datos.gov.co/resource/d7a5-cnra.json`) utilizando la librería `requests` de Python, parametrizando la carga para superar las restricciones de paginación por defecto.
+2.  **Análisis Bibliométrico Avanzado (Motor de R):** Configuración del entorno del sistema operativo Linux (instalación de dependencias críticas como `libpoppler-cpp-dev` y `libcurl4-openssl-dev`) para permitir la compilación nativa del paquete científico `bibliometrix` de R directamente desde una celda empleando el comando mágico `%%R`.
+3.  **Procesamiento de Lenguaje Natural (NLP - Python):** Implementación del algoritmo VADER a través de `nltk` para analizar de manera automatizada el corpus de resúmenes científicos de Scopus, calculando la métrica normalizada de score *Compound* para categorizar la favorabilidad de la innovación.
+4.  **Modelado Predictivo de Series de Tiempo (ML - Scikit-Learn):** Extracción de la serie histórica de producción, transformación mediante `PolynomialFeatures` (Grado 2) para capturar tendencias no lineales, y ajuste de una `LinearRegression` para proyectar el volumen de investigación hacia el año 2030.
+5.  **Validación Estadística (Scipy):** Cálculo de la Función de Densidad de Probabilidad (PDF) normal de los datos históricos para contrastar las proyecciones algorítmicas con la distribución de probabilidad matemática real.
+
+---
+
+## 4. Instrucciones de Reproducibilidad
+
+Para garantizar que este flujo de trabajo sea completamente reproducible por el docente o cualquier científico de datos, siga los siguientes pasos:
+
+1.  **Clonar el Repositorio:**
+    ```bash
+    git clone [https://github.com/TU_USUARIO/TU_REPOSITORIO.git](https://github.com/TU_USUARIO/TU_REPOSITORIO.git)
+    cd TU_REPOSITORIO
+    ```
+2.  **Preparación de Archivos:** Asegúrese de colocar los archivos `scopus.csv` y `AnnualSciProd.csv` en la misma raíz del directorio de ejecución (o súbalos a la ruta `/content/` si está ejecutando en Google Colab).
+3.  **Ejecutar el Notebook:** Abra el archivo `Dashboard_Fase4.ipynb` en su entorno interactivo y ejecute las celdas secuencialmente. El mismo script se encargará de configurar las librerías del sistema Linux y descargar los lexicones de NLP de forma automatizada.
+
+---
+
+## Cuadro de Interpretación Estratégica AI
+El cuadro de texto interactivo embebido en el dashboard concluye lo siguiente:
+> *"El análisis de procesamiento de lenguaje natural sobre la literatura reciente revela un **70.77% de sentimiento Positivo/Innovador**. Esto indica una sólida confianza académica global en el uso de analítica avanzada para resolver problemas de salud pública. Cruzando esto con los modelos de Machine Learning entrenados, se proyecta un crecimiento exponencial que superará las **900 publicaciones anuales para el 2030**, teniendo como focos analíticos principales las variables de género y rango etario. Esta fundamentación teórica y matemática valida la urgencia estratégica de implementar modelos predictivos sobre la BDUA local para salvaguardar la sostenibilidad financiera de las EPS y mitigar la desprotección de los afiliados vulnerables."*
+"""
+
+with open("README.md", "w", encoding="utf-8") as f:
+    f.write(readme_content)
+
+print("File README.md successfully created.")
