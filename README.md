@@ -1,8 +1,12 @@
 # Dashboard de Inteligencia de Negocios: Analítica en Salud Pública
 
 **Universidad Nacional Abierta y a Distancia (UNAD)**
+
 **Curso:** Métodos Cuantitativos y Cualitativos para los Negocios (107071)
+
 **Fase 4:** Diseño y construcción de dashboard de inteligencia de negocios
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/oscarladino16/BDUA-Health-Analytics-Dashboard/blob/main/BDAU_Analytics.ipynb)
 
 ### Nivel 1: Perspectiva de Aprendizaje y Crecimiento (La Base Analítica)
 * **Estrategia:** Comprender, mediante la revisión científica global, el impacto de las variables demográficas en los sistemas de aseguramiento y validar el uso de algoritmos predictivos para la gestión de salud pública.
@@ -59,7 +63,3 @@ El cuadro de texto interactivo embebido en el dashboard concluye lo siguiente:
 > *"El análisis de procesamiento de lenguaje natural sobre la literatura reciente revela un **70.77% de sentimiento Positivo/Innovador**. Esto indica una sólida confianza académica global en el uso de analítica avanzada para resolver problemas de salud pública. Cruzando esto con los modelos de Machine Learning entrenados, se proyecta un crecimiento exponencial que superará las **900 publicaciones anuales para el 2030**, teniendo como focos analíticos principales las variables de género y rango etario. Esta fundamentación teórica y matemática valida la urgencia estratégica de implementar modelos predictivos sobre la BDUA local para salvaguardar la sostenibilidad financiera de las EPS y mitigar la desprotección de los afiliados vulnerables."*
 """
 
-with open("README.md", "w", encoding="utf-8") as f:
-    f.write(readme_content)
-
-print("File README.md successfully created.")
