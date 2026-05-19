@@ -46,8 +46,8 @@ Para garantizar que este flujo de trabajo sea completamente reproducible por el 
 
 1.  **Clonar el Repositorio:**
     ```bash
-    git clone [https://github.com/TU_USUARIO/TU_REPOSITORIO.git](https://github.com/TU_USUARIO/TU_REPOSITORIO.git)
-    cd TU_REPOSITORIO
+    git clone [https://github.com/oscarladino16/BDUA-Health-Analytics-Dashboard.git](https://github.com/oscarladino16/BDUA-Health-Analytics-Dashboard.git)
+    cd BDUA-Health-Analytics-Dashboard
     ```
 2.  **Preparación de Archivos:** Asegúrese de colocar los archivos `scopus.csv` y `AnnualSciProd.csv` en la misma raíz del directorio de ejecución (o súbalos a la ruta `/content/` si está ejecutando en Google Colab).
 3.  **Ejecutar el Notebook:** Abra el archivo `Dashboard_Fase4.ipynb` en su entorno interactivo y ejecute las celdas secuencialmente. El mismo script se encargará de configurar las librerías del sistema Linux y descargar los lexicones de NLP de forma automatizada.
