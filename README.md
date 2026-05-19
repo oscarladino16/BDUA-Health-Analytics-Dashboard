@@ -31,7 +31,7 @@
 
 ---
 
-## 3. 🛠️ Arquitectura del Flujo Analítico y Estructura del Código
+## 3. Arquitectura del Flujo Analítico y Estructura del Código
 
 El proyecto está diseñado para ejecutarse de forma políglota dentro de un único Jupyter Notebook (`Dashboard_Fase4.ipynb`), orquestando entornos de **Python 3.12** y **R** de manera coordinada.
 
