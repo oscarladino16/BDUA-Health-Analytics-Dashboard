@@ -1,24 +1,33 @@
-# BDUA-Health-Analytics-Dashboard
-Métodos Cuantitativos y Cualitativos para los Negocios.
-# Inteligencia de Negocios en Salud Pública: Predicción y Cobertura (BDUA)
+# Dashboard de Inteligencia de Negocios: Analítica en Salud Pública 📊
+
+**Universidad Nacional Abierta y a Distancia (UNAD)**
+**Curso:** Métodos Cuantitativos y Cualitativos para los Negocios (107071)
+**Fase 4:** Diseño y construcción de dashboard de inteligencia de negocios
 
 ## Descripción del Proyecto
-Este proyecto desarrolla un flujo de trabajo analítico que integra métodos estadísticos, Machine Learning y minería de texto (NLP) para fundamentar la toma de decisiones estratégicas en el sector salud. El objetivo principal es predecir el comportamiento y la volatilidad del estado de afiliación de poblaciones vulnerables utilizando la Base de Datos Única de Afiliados (BDUA) de Colombia, respaldado por un análisis contextual del estado del arte científico.
+Este repositorio contiene el flujo de trabajo analítico desarrollado para fundamentar la toma de decisiones estratégicas en el sector salud. Se integra minería de texto (NLP), aprendizaje automático (Machine Learning) y estadística para analizar el estado del arte y predecir el comportamiento de la investigación sobre modelos predictivos en poblaciones vulnerables.
 
-## Arquitectura del Proyecto (Doble Eje)
-1. **Eje de Realidad Operativa (BDUA):** Modelado predictivo de series de tiempo mediante Machine Learning para pronosticar volúmenes de afiliados por grupo etario y condición de vulnerabilidad (`Condición del beneficiario`).
-2. **Eje de Contexto Científico (Scopus):** Análisis bibliométrico y de sentimiento (NLP) sobre las tendencias globales en la adopción de analítica de datos para la gestión y aseguramiento en salud pública.
+## ⚙️ Análisis Bibliométrico (RStudio - Biblioshiny)
+A continuación, se presentan los hallazgos clave de la literatura científica extraída de Scopus para la toma de decisiones:
 
-## Cuadro de Mando Integral (Balanced Scorecard - Bottom-Up)
-* **Aprendizaje y Crecimiento:** Análisis bibliométrico (Bibliometrix) y de sentimiento (NLP) de la literatura científica en Scopus.
-* **Procesos Internos:** Despliegue de modelos de Machine Learning para el forecast de estados de afiliación en la BDUA.
-* **Perspectiva del Cliente:** Estabilidad en la cobertura de salud y protección activa de poblaciones en condiciones de riesgo.
-* **Perspectiva Financiera:** Proyección y optimización de ingresos por Unidad de Pago por Capitación (UPC) indexada por edad y género.
+### 1. Tendencia Anual de Producción Científica
+*(Demuestra el crecimiento exponencial del interés en esta temática)*
+![Tendencia Anual](AnnualSciProd.png)
 
-## Tecnologías Utilizadas
-* **Entorno:** Jupyter Notebook (Google Colab / GitHub)
-* **Procesamiento de Datos:** Pandas, NumPy
-* **NLP & Sentimiento:** Hugging Face (Transformers), Qwen/LLMs
-* **Machine Learning & Estadística:** Scikit-Learn, Statsmodels, SciPy (PDF)
-* **Bibliometría:** Bibliometrix
-* **Visualización:** Matplotlib, Seaborn (Salidas listas para Dashboard)
+### 2. Nube de Palabras Clave (Author's Keywords)
+*(Enfoque de los investigadores en el nicho de negocio)*
+![Nube de Palabras](WordCloud.png)
+
+### 3. Mapa Temático Estratégico
+*(Cuadrantes de desarrollo de la problemática)*
+![Mapa Tematico](ThematicMap.png)
+
+## 🚀 Estrategia de Negocios y Resultados (Python)
+El análisis predictivo en Python permitió evaluar el sentimiento de la literatura frente a la implementación de estas tecnologías. En respuesta a los riesgos éticos hallados, se proponen estrategias centradas en la **explicabilidad (XAI) y equidad (Fairness)** en la adopción de algoritmos para la gestión en salud pública. 
+
+El detalle de estas estrategias, los KPIs propuestos y las predicciones estadísticas (PDF/ML) se encuentran consolidados en el **Dashboard final**.
+
+## 📂 Archivos del Repositorio
+* `BDAU_Analytics.ipynb`: Cuaderno de Jupyter con el código fuente en Python.
+* `scopus.csv`: Dataset original con la literatura científica.
+* `Dashboard_Fase4_Inteligencia_Negocios.pdf`: Panel gerencial interpretado y predicciones de ML.
