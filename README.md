@@ -1,4 +1,4 @@
-# Dashboard de Inteligencia de Negocios: Analítica en Salud Pública 📊
+# Dashboard de Inteligencia de Negocios: Analítica en Salud Pública
 
 **Universidad Nacional Abierta y a Distancia (UNAD)**
 **Curso:** Métodos Cuantitativos y Cualitativos para los Negocios (107071)
