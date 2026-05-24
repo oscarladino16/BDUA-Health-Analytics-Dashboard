@@ -75,9 +75,9 @@ Para garantizar que este flujo de trabajo sea completamente reproducible por el 
 
 A continuación, se presentan los hallazgos visuales de la literatura científica global extraídos de Scopus. Puedes hacer clic en los enlaces para acceder a los archivos interactivos o revisarlos directamente abajo:
 
-* 🔗 **[Ver Producción Científica Anual](./img/annualsciprod.png)**
-* 🔗 **[Ver Mapa Temático](./img/ThematicMap.png)**
-* 🔗 **[Ver Nube de Palabras (Word Cloud)](./img/WordCloud.png)**
+* 🔗 **[Ver Producción Científica Anual](./annualsciprod.png)**
+* 🔗 **[Ver Mapa Temático](./ThematicMap.png)** 
+* 🔗 **[Ver Nube de Palabras (Word Cloud)](./WordCloud.png)**
 
 ---
 
