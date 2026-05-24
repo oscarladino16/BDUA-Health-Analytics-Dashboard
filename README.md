@@ -70,7 +70,29 @@ Para garantizar que este flujo de trabajo sea completamente reproducible por el 
 2.  **Preparación de Archivos:** Asegúrese de colocar los archivos `scopus.csv` y `AnnualSciProd.csv` en la misma raíz del directorio de ejecución (o súbalos a la ruta `/content/` si está ejecutando en Google Colab).
 3.  **Ejecutar el Notebook:** Abra el archivo `Dashboard_Fase4.ipynb` en su entorno interactivo y ejecute las celdas secuencialmente. El mismo script se encargará de configurar las librerías del sistema Linux y descargar los lexicones de NLP de forma automatizada.
 
+
+### Visualizaciones de Bibliometrix
+
+A continuación, se presentan los hallazgos visuales de la literatura científica global extraídos de Scopus. Puedes hacer clic en los enlaces para acceder a los archivos interactivos o revisarlos directamente abajo:
+
+* 🔗 **[Ver Producción Científica Anual](./img/annualsciprod.png)**
+* 🔗 **[Ver Mapa Temático](./img/ThematicMap.png)**
+* 🔗 **[Ver Nube de Palabras (Word Cloud)](./img/WordCloud.png)**
+
 ---
+
+#### 1. Producción Científica Anual
+*(Evidencia del crecimiento exponencial en la adopción algorítmica dentro del sector salud)*
+![Producción Científica Anual](./img/annualsciprod.png)
+
+#### 2. Mapa Temático
+*(Análisis de densidad y centralidad de los focos demográficos de investigación)*
+![Mapa Temático](./img/ThematicMap.png)
+
+#### 3. Nube de Palabras Clave
+*(Visualización de las frecuencias de segmentación basadas en género y edad)*
+![Nube de Palabras Clave](./img/WordCloud.png)
+
 
 ## Cuadro de Interpretación Estratégica AI
 El cuadro de texto interactivo embebido en el dashboard concluye lo siguiente:
