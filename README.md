@@ -8,6 +8,20 @@
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/oscarladino16/BDUA-Health-Analytics-Dashboard/blob/main/BDAU_Analytics.ipynb)
 
+### 📊 Cuadro de Mando Integral (Balanced Scorecard) - KPIs y Metas
+
+| Nivel Estratégico | KPI | Descripción | Meta (Target) |
+| :--- | :--- | :--- | :--- |
+| **Aprendizaje y Crecimiento** | **KPI 1: Sentimiento de Innovación** | Índice de favorabilidad NLP en literatura científica sobre analítica en salud. | **> 70%** (Sentimiento Positivo) |
+| **Aprendizaje y Crecimiento** | **KPI 2: Focos de Atención Demográfica** | Identificación algorítmica de los grupos poblacionales más estudiados. | **Top 2** (Mapeo estricto de Género y Edad) |
+| **Procesos Internos** | **KPI 3: Precisión del Forecast Demográfico** | Tasa de asertividad del modelo de Machine Learning al pronosticar estados de afiliación. | **> 85%** (Accuracy algorítmico) |
+| **Procesos Internos** | **KPI 4: Eficiencia en Depuración** | Identificación automatizada de registros atípicos (fallecidos/retirados) en la BDUA. | **100%** (Detección previa a auditoría) |
+| **Perspectiva del Cliente** | **KPI 5: Estabilidad de Cobertura** | Tasa de usuarios con cobertura activa garantizada frente al riesgo de inestabilidad. | **> 95%** (Afiliados en estado ACTIVO) |
+| **Perspectiva del Cliente** | **KPI 6: Garantía de Afiliación Vulnerable** | Identificación de población asegurada bajo categorías prioritarias de protección especial. | **100%** (Aislamiento algorítmico del clúster) |
+| **Perspectiva Financiera** | **KPI 7: Proyección de Ingresos UPC** | Consolidación de la base capitable clasificada por grupos etarios y género. | **100%** (Conciliación de datos a reportar) |
+| **Perspectiva Financiera** | **KPI 8: Mitigación de Pagos Indebidos** | Prevención de glosas financieras cuantificando registros inactivos y el valor proxy de la UPC. | **Reducción a $0 COP** (Exposición a glosas por lote analizado) |
+
+
 ### Nivel 1: Perspectiva de Aprendizaje y Crecimiento (La Base Analítica)
 * **Estrategia:** Comprender, mediante la revisión científica global, el impacto de las variables demográficas en los sistemas de aseguramiento y validar el uso de algoritmos predictivos para la gestión de salud pública.
 * **KPI 1 (Sentimiento de Innovación en Salud Pública):** Índice de favorabilidad obtenido mediante NLP en los resúmenes científicos (*abstracts*) respecto a la adopción de análisis de datos. 
