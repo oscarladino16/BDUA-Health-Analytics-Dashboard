@@ -75,7 +75,7 @@ Para garantizar que este flujo de trabajo sea completamente reproducible por el 
 
 A continuación, se presentan los hallazgos visuales de la literatura científica global extraídos de Scopus. Puedes hacer clic en los enlaces para acceder a los archivos interactivos o revisarlos directamente abajo:
 
-* 🔗 **[Ver Producción Científica Anual](./AnnualSciProd.png)**AnnualSciProd.png
+* 🔗 **[Ver Producción Científica Anual](./AnnualSciProd.png)**
 * 🔗 **[Ver Mapa Temático](./ThematicMap.png)** 
 * 🔗 **[Ver Nube de Palabras (Word Cloud)](./WordCloud.png)** 
 
@@ -83,15 +83,15 @@ A continuación, se presentan los hallazgos visuales de la literatura científic
 
 #### 1. Producción Científica Anual
 *(Evidencia del crecimiento exponencial en la adopción algorítmica dentro del sector salud)*
-![Producción Científica Anual](./img/annualsciprod.png)
+!**[Producción Científica Anual](./AnnualSciProd.png)**
 
 #### 2. Mapa Temático
 *(Análisis de densidad y centralidad de los focos demográficos de investigación)*
-![Mapa Temático](./img/ThematicMap.png)
+**[Mapa Temático](./ThematicMap.png)** 
 
 #### 3. Nube de Palabras Clave
 *(Visualización de las frecuencias de segmentación basadas en género y edad)*
-![Nube de Palabras Clave](./img/WordCloud.png)
+**[Nube de Palabras (Word Cloud)](./WordCloud.png)** 
 
 
 ## Cuadro de Interpretación Estratégica AI
