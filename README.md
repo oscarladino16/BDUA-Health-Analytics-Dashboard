@@ -3,7 +3,7 @@
 **Universidad Nacional Abierta y a Distancia (UNAD)**
 
 Autores: 
-**Oscar Eduardo Ladino Rey**
+**Oscar Eduardo Ladino Rey**,
 **Yenny Carolina Romero**
 
 **Curso:** Métodos Cuantitativos y Cualitativos para los Negocios (107071)
